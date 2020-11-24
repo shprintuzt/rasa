@@ -1,0 +1,23 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+
+- chitchat
+- faq
+
+responses:
+  utter_chitchat/ask_name:
+  - image: "https://i.imgur.com/zTvA58i.jpeg"
+    text: こんにちは。私はよりそいボットです。
+  - text: よりそいボットと呼ばれています！
+
+  utter_chitchat/ask_weather:
+  - text: 今は丁度ベルリンの晴れの日ようです。
+    image: "http://i.imgur.com/vwv7aHN.png"
+  - text: １週間の天気はわかりませんが、今日は晴れるみたいです。
+
+  utter_faq:
+  - text: そうなんですね。
+  - text: それはすごいです。

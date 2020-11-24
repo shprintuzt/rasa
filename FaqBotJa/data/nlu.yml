@@ -1,0 +1,23 @@
+version: "2.0"
+nlu:
+
+- intent: faq
+  examples: |
+    - 今日も仕事頑張ったな。
+    - 何て日だ！
+    - 私はそろばん10段です。
+    - 面白いこと言ってよ。
+
+- intent: chitchat/ask_name
+  examples: |
+    - あなたの名前は？
+    - 名前は何？
+    - 何と呼ばれてる？
+    - 名前はありますか？
+
+- intent: chitchat/ask_weather
+  examples: |
+    - 今日の天気はどんな感じ？
+    - 今日は晴れそう？
+    - おっと、そういえば天気を調べてくれない？
+    - ベルリンの晴れの日が好きなんだ。

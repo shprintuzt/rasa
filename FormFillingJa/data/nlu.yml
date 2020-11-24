@@ -1,0 +1,34 @@
+version: "2.0"
+
+nlu:
+- intent: request_restaurant
+  examples: |
+    - レストランを探したい。
+    - 近くに[中華](cuisine)料理はある？
+    - [和食](cuisine)を出すお店
+    - レストランに行きたい。
+    - [メキシコ料理](cuisine)を出すお店を探しているんだけど。
+
+- intent: affirm
+  examples: |
+    - はい
+    - それで
+    - うん
+
+- intent: deny
+  examples: |
+    - いいえ
+    - いや
+    - だめ
+
+- intent: inform
+  examples: |
+    - [タイ料理](cuisine)は？
+    - [和食](cuisine)
+    - [中華料理](cuisine)を探している。
+    - あー、[メキシコ料理](cuisine)
+    - 10人
+    - 1人だけ
+    - 7人で予約して
+    - 2で
+
