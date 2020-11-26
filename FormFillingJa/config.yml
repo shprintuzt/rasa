@@ -24,6 +24,8 @@ pipeline:
 #     ambiguity_threshold: 0.1
 - name: "SpacyNLP"
   model: "ja_core_news_md"
+### convert zenkaku eisu to hankaku eisu
+- name: "customComponents.zenkakuToHankakuEisu"
 - name: "SpacyTokenizer"
   "intent_tokenization_flag": False
   "intent_split_symbol": "_"
