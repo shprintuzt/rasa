@@ -37,5 +37,32 @@ stories:
   - intent: stop
   - action: utter_ask_continue
   - intent: deny
+  - intent: utter_stop
   - action: action_deactivate_loop
   - active_loop: null
+
+- story: User interruputs the form but reconsidered to continue
+  steps:
+  - intent: request_restaurant
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - intent: stop
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: utter_continue
+  - action: restaurant_form
+  - active_loop: restaurant_form
+
+# a user can interrupt infinitely times because chitchat
+# is written in rules.
+# but a use can stop only finite times because stop is written in stories.
+- story: User interruputs with chitchat
+  steps:
+  - intent: request_restaurant
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - intent: chitchat
+  - action: utter_chitchat
+  - action: restaurant_form
+  - active_loop: restaurant_form
+

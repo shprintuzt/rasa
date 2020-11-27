@@ -72,9 +72,10 @@ class zenkakuToHankakuEisu(Component):
         :meth:`components.Component.process`
         of components previous to this one."""
         text = message.get("text")
-        zenToHan = { chr(0xFF01 + c) : chr(0x21 + c) for c in range(94) }
-        textNoZenkakuEisu = "".join([ c if c not in zenToHan else zenToHan[c] for c in text ])
-        message.set("text", textNoZenkakuEisu)
+        if text is not None:
+            zenToHan = { chr(0xFF01 + c) : chr(0x21 + c) for c in range(94) }
+            textNoZenkakuEisu = "".join([ c if c not in zenToHan else zenToHan[c] for c in text ])
+            message.set("text", textNoZenkakuEisu)
 
     def persist(self, file_name: Text, model_dir: Text) -> Optional[Dict[Text, Any]]:
         """Persist this component to disk for future loading."""
