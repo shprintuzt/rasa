@@ -66,3 +66,14 @@ stories:
   - action: restaurant_form
   - active_loop: restaurant_form
 
+- story: answer vision in x years
+  steps:
+    - intent: ask_vision
+      entities:
+      - number: "7"
+    - action: action_vision
+
+- story: answer future vision
+  steps:
+    - intent: ask_vision
+    - action: utter_future
