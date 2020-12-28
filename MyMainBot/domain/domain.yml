@@ -1,0 +1,95 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- affirm
+- request_restaurant
+- chitchat:
+    is_retrieval_intent: true
+- stop
+- mood_great
+- greet
+- faq
+- deny
+- inform
+- mood_unhappy
+entities:
+- cuisine
+- number
+- name
+- company
+#slots:
+#  cuisine:
+#    type: text
+#    auto_fill: false
+#    influence_conversation: false
+#  num_people:
+#    type: float
+#    auto_fill: false
+#    influence_conversation: false
+#    max_value: 1.0
+#    min_value: 0.0
+#  outdoor_seating:
+#    type: text
+#    auto_fill: false
+#    influence_conversation: false
+#  requested_slot:
+#    type: text
+#    influence_conversation: false
+responses:
+  utter_chitchat/ask_name:
+  - image: https://i.imgur.com/zTvA58i.jpeg
+    text: こんにちは。私はよりそいボットです。
+  - text: よりそいボットと呼ばれています！
+  utter_chitchat/ask_weather:
+  - text: 今は丁度ベルリンの晴れの日ようです。
+    image: http://i.imgur.com/vwv7aHN.png
+  - text: １週間の天気はわかりませんが、今日は晴れるみたいです。
+  utter_faq:
+  - text: そうなんですね。
+  - text: それはすごいです。
+  utter_ask_cuisine:
+  - text: 何が食べたいですか？
+  utter_ask_num_people:
+  - text: 何人ですか？
+  utter_ask_outdoor_seating:
+  - text: 屋内でよろしいですか？
+  utter_submit:
+  - text: 完了しました。
+  utter_slots_values:
+  - text: "以下の条件でレストランを検索します。:\n - ジャンル：{cuisine}\n - 人数：{num_people}\n - 屋外：{outdoor_seating}"
+  utter_ask_continue:
+  - text: 続けますか？
+  utter_continue:
+  - text: 続けます。
+  utter_stop:
+  - text: 終わります。またいつでもお声がけください。
+  utter_greet:
+  - text: こんにちは。調子はどうですか？
+  utter_happy:
+  - text: それは何よりです
+  utter_cheer_up:
+  - text: 元気出してください。こまねち！
+  utter_did_that_help:
+  - text: 元気出ましたか？
+  utter_goodbye:
+  - text: 残念です。それではまた。
+actions:
+- action_vision
+- action_intro_hobby
+#forms:
+#  restaurant_form:
+#    cuisine:
+#    - type: from_entity
+#      entity: cuisine
+#    num_people:
+#    - type: from_entity
+#      entity: number
+#    outdoor_seating:
+#    - type: from_intent
+#      intent: affirm
+#      value: true
+#    - type: from_intent
+#      intent: deny
+#      value: false

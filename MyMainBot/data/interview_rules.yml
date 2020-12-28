@@ -1,0 +1,63 @@
+version: "2.0"
+
+rules:
+
+# introduction
+- rule: introduction1
+  steps:
+  - intent: ask_introduction
+  - action: action_intro_hobby
+
+- rule: introduction2
+  steps:
+  - intent: introduction
+  - action: action_intro_hobby
+
+# study
+- rule: study
+  steps:
+  - intent: ask_study
+  - action: utter_study_abst
+
+# personality
+- rule: personality
+  steps:
+  - intent: ask_personality
+  - action: utter_personality
+  
+# strength
+- rule: strength
+  steps:
+  - intent: ask_strength
+  - action: utter_strength
+
+# weakness
+- rule: weakness
+  steps:
+  - intent: ask_weakness
+  - action: utter_weakness
+  
+# did hard
+- rule: did hard
+  steps:
+  - intent: ask_did_hard
+  - action: utter_worked_hardest
+
+# motivation
+- rule: motivation
+  steps:
+  - intent: ask_motivation
+  - action: utter_motivation
+  
+# vision
+- rule: short vision
+  steps:
+  - intent: ask_short_vision
+  - action: utter_short_vision
+
+# place
+- rule: place
+  steps:
+  - intent: ask_place
+  - action: utter_place
+  

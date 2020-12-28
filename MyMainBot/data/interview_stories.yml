@@ -1,0 +1,54 @@
+version: "2.0"
+
+stories:
+
+# study
+- story: study detail
+  steps:
+  - intent: ask_study
+  - action: utter_study_abst
+  - intent: ask_detail
+  - action: utter_study_detail
+  
+- story: study motivation
+  steps:
+  - intent: ask_study
+  - action: utter_study_abst
+  - intent: ask_reason
+  - action: utter_study_motivation
+  
+- story: study application
+  steps:
+  - intent: ask_study
+  - action: utter_study_abst
+  - intent: ask_application
+  - action: utter_study_application
+  
+# motivation
+- story: motivation
+  steps:
+  - intent: ask_motivation
+  - action: utter_motivation
+  - intent: ask_reason
+  - action: utter_motivation_reason
+  
+#vision
+- story: answer vision in x years
+  steps:
+    - intent: ask_long_vision
+      entities:
+      - number: "7"
+    - action: action_vision
+
+- story: answer future vision
+  steps:
+    - intent: ask_long_vision
+    - action: utter_future
+
+# question from interviewee
+- story: question
+  steps:
+  - intent: ask_question
+  - action: utter_question_benefit
+#  - action: utter_question_vision
+  
