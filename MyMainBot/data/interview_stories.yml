@@ -2,6 +2,19 @@ version: "2.0"
 
 stories:
 
+## introduction
+#- story: introduction1
+#  steps:
+#  - intent: introduction
+#  - action: utter_introduction
+#  - action: utter_hobby
+#
+#- story: introduction2
+#  steps:
+#  - intent: ask_introduction
+#  - action: utter_introduction
+#  - action: utter_hobby
+
 # study
 - story: study detail
   steps:

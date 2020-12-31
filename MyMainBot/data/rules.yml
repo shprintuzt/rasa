@@ -12,17 +12,17 @@ rules:
   - intent: chitchat
   - action: utter_chitchat
 
-- rule: activate restaurant form
-  steps:
-    - intent: request_restaurant
-    - action: restaurant_form
-    - active_loop: restaurant_form
+#- rule: activate restaurant form
+#  steps:
+#    - intent: request_restaurant
+#    - action: restaurant_form
+#    - active_loop: restaurant_form
 
-- rule: submit form
-  condition:
-  - active_loop: restaurant_form
-  steps:
-    - action: restaurant_form
-    - active_loop: null
-    - action: utter_submit
-    - action: utter_slots_values
+#- rule: submit form
+#  condition:
+#  - active_loop: restaurant_form
+#  steps:
+#    - action: restaurant_form
+#    - active_loop: null
+#    - action: utter_submit
+#    - action: utter_slots_values

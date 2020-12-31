@@ -78,6 +78,8 @@ responses:
 actions:
 - action_vision
 - action_intro_hobby
+#- action_custom_default_ask_affirmation
+#- action_custom_two_stage_fallback
 #forms:
 #  restaurant_form:
 #    cuisine:

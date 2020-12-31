@@ -5,19 +5,19 @@ rules:
 # introduction
 - rule: introduction1
   steps:
-  - intent: ask_introduction
+  - intent: introduction
   - action: action_intro_hobby
 
 - rule: introduction2
   steps:
-  - intent: introduction
+  - intent: ask_introduction
   - action: action_intro_hobby
 
-# study
-- rule: study
-  steps:
-  - intent: ask_study
-  - action: utter_study_abst
+## study
+#- rule: study
+#  steps:
+#  - intent: ask_study
+#  - action: utter_study_abst
 
 # personality
 - rule: personality
@@ -61,3 +61,9 @@ rules:
   - intent: ask_place
   - action: utter_place
   
+# fallback
+- rule: fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_two_stage_fallback
+  - active_loop: action_two_stage_fallback

@@ -10,6 +10,8 @@ responses:
   - text: クラシックギターを弾いています。
   utter_hobby_reading:
   - text: 科学系の本を読んだりします。
+  utter_greeting:
+  - text: よろしくお願いします。
 
 # study
   utter_study_abst:
@@ -76,4 +78,11 @@ responses:
   utter_question_vision:
   - text: 弊社の将来のビジョンについて教えてください。
 
-
+# fallback
+  utter_please_rephrase:
+  - text: 申し訳ありません。理解できませんでした。言い換えて質問していただけないでしょうか？
+  utter_ask_rephrase:
+  - text: 言い換えて質問していただけますか？
+#  # understand user intent but do not have answer.
+  utter_default:
+  - text: 申し訳ありません。質問を理解できませんでした。
