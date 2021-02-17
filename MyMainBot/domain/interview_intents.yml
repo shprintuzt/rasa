@@ -1,0 +1,45 @@
+version: '2.0'
+intents:
+#- introduction:
+#    use_entities: []
+- ask_introduction
+- ask_study
+- ask_personality
+- ask_strength
+- ask_weakness
+- ask_did_hard
+- ask_motivation
+- ask_short_vision
+- ask_long_vision
+- ask_place
+- ask_question
+# detail questions
+- ask_detail
+- ask_reason
+- ask_application
+
+
+#utter_introduction:
+#utter_hobby:
+#utter_hobby_sports:
+#utter_hobby_guitar:
+#utter_hobby_reading:
+#utter_study_abst:
+#utter_study_motivation:
+#utter_study_application:
+#utter_study_detail:
+#utter_personality
+#utter_strength
+#utter_weakness
+#utter_worked_hardest
+#utter_motivation:
+#utter_motivation_reason:
+#utter_short_vision:
+#utter_vision_invalid:
+#utter_vision_in_5_years:
+#utter_vision_in_10_years:
+#utter_vision_in_20_years:
+#utter_future:
+#utter_place
+#utter_question_benefit
+#utter_question_vision

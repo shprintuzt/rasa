@@ -1,0 +1,84 @@
+version: '2.0'
+responses:
+# introduction
+  utter_introduction:
+  - text: 大阪大学大学院情報科学研究科の五島です。
+  utter_hobby:
+  - text: 趣味はスポーツ、ギター、読書です。
+  utter_hobby_sports:
+  - text: スポーツであれば、フットサルや水泳をしたりします。
+  utter_hobby_guitar:
+  - text: クラシックギターを弾いています。
+  utter_hobby_reading:
+  - text: 科学系の本を読んだりします。
+  utter_greeting:
+  - text: よろしくお願いします。
+
+# study
+  utter_study_abst:
+  - text: 動的に変化する環境で動作する情報拡散アルゴリズムの設計を行っています。
+  utter_study_motivation:
+  - text:  近年の分散システムは、故障やノードの移動などによって、動的な変化が不可避となっており、より実用的なモデルを考えたい、という動機でこの研究を始めました。
+  utter_study_application:
+  - text: 車車間ネットワークなどに応用先があります。
+  utter_study_detail:
+  - text: エージェントと呼ばれる、ネットワーク内を移動できるソフトウェアを用いて情報拡散を行います。任意の形状のネットワークにおいて、同時に削除される辺が高々l本であれば、2l+1体のエージェントを用いて情報拡散が可能であることを示しました。
+  
+# personality
+  utter_personality:
+  - text: 人見知りで褒められたがりです。
+
+# strength
+  utter_strength:
+  - text: 理想に向かって努力していけるところです。
+
+# weakness
+  utter_weakness:
+  - text: 見通しが甘いことです。そのせいで、準備がギリギリになったり、目標が達成できないことがあります。
+
+# what I worked hardest
+  utter_worked_hardest:
+  - text: 学部時代はギターを、大学院では研究に力を入れて取り組みました。
+
+# motivation
+  utter_motivation:
+  - text: 人と自然に会話できる機械が当たり前になる世界を実現したいからです。
+  utter_motivation_reason:
+  - text: 先程の目標の実現によって、社会にも私自身にも大きな価値がもたらされるからです。
+
+# vision
+  utter_short_vision:
+  - text: ソフトウェアの設計や、対話のコア部分を作ったり、ビジネスソリューションの企画に取り組みたいです。
+  utter_vision_invalid:
+  - text: 5年後、10年後、20年後、くらいの未来で質問し直していただけないでしょうか。
+  utter_vision_in_5_years:
+  - text: エンジニアとして一人前に活動しており、ビジネスモデルの企画などにも携わっていたいです。
+  utter_vision_in_10_years:
+  - text: エンジニアとして技術を磨き続ける一方で、企画にもより力を入れて取り組んでいたいです。
+  utter_vision_in_20_years:
+  - text: 社会を広く見渡す視野を持ち、自らも開発を行いながら、新たな事業を立ち上げていたい。
+  utter_future:
+  - text: 将来はエンジニアとして自立し、面白く、社会に価値を提供する物を作っていたいです。
+
+# place
+  utter_place:
+  - text: 関西で働きたいです。
+
+# question
+  utter_question_benefit:
+  - text: 福利厚生について教えてください。
+  utter_question_vision:
+  - text: 弊社の将来のビジョンについて教えてください。
+  
+# thank
+  utter_thank:
+  - text: ありがとうございます。
+
+# fallback
+  utter_please_rephrase:
+  - text: 申し訳ありません。理解できませんでした。言い換えて質問していただけないでしょうか？
+  utter_ask_rephrase:
+  - text: 言い換えて質問していただけますか？
+#  # understand user intent but do not have answer.
+  utter_default:
+  - text: 申し訳ありません。質問を理解できませんでした。言い換えて質問していただけますか？

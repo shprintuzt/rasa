@@ -1,0 +1,116 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- ask_study
+- ask_labo_motivation
+- ask_univ_motivation
+- ask_reason
+- ask_introduction
+- ask_personality
+- ask_strength
+- ask_weakness
+- ask_did_hard
+- ask_motivation
+- ask_short_vision
+- ask_long_vision
+- ask_place
+- ask_question
+- ask_detail
+- ask_application
+- mood_great
+- mood_unhappy
+- affirm
+- deny
+- faq
+- chitchat:
+    is_retrieval_intent: true
+responses:
+  utter_introduction:
+  - text: 大阪大学大学院情報科学研究科の五島です。
+  utter_hobby:
+  - text: 趣味はスポーツ、ギター、読書です。
+  utter_hobby_sports:
+  - text: スポーツであれば、フットサルや水泳をしたりします。
+  utter_hobby_guitar:
+  - text: クラシックギターを弾いています。
+  utter_hobby_reading:
+  - text: 科学系の本を読んだりします。
+  utter_greeting:
+  - text: よろしくお願いします。
+  utter_study_abst:
+  - text: 動的に変化する環境で動作する情報拡散アルゴリズムの設計を行っています。
+  utter_study_motivation:
+  - text: 理論系の分野の研究室に所属しており、学士論文では理論系の研究を行ったのですが、その時は取り組んでいるテーマが社会に役立つイメージが湧かず、その中で理論系の中でもより実用に役立つ研究を行いたいと考えるようになりました。近年の分散システムは、故障やノードの移動などによって、動的な変化が不可避となっており、そのようなモデルを考えることは実用的につながるだろう、という動機でこの研究を始めました。
+  utter_labo_motivation:
+  - text: 学部生の時に、数学や計算機科学系の科目が得意で、その延長で理論的な事柄を深く勉強したいと思い、現在の研究室を選びました。
+  utter_univ_motivation:
+  - text: 当時コンピュータをよく使っており、その仕組みを勉強したいということと、コンピュータはこれからもますます使われるようになるだろうと漠然と考えており、将来役立つ知識が身に付くのではないかと考え、情報科学部を選択しました。
+  utter_study_application:
+  - text: 車車間ネットワークなどに応用先があります。
+  utter_study_detail:
+  - text: エージェントと呼ばれる、ネットワーク内を移動できるソフトウェアを用いて情報拡散を行います。任意の形状のネットワークにおいて、同時に削除される辺が高々l本であれば、2l+1体のエージェントを用いて情報拡散が可能であることを示しました。
+  utter_personality:
+  - text: 人見知りで褒められたがりです。
+  utter_strength:
+  - text: 理想に向かって努力していけるところです。昔から努力する性格でしたが、それが褒められたがりな性格と合わさって、努力する、褒められる、また努力する、というサイクルが作られ、今でも研究やプログラミングコンテスト、アプリ開発のために努力を続けています。
+  utter_weakness:
+  - text: 見通しが甘いことです。そのせいで、準備がギリギリになったり、高すぎる目標を設定し達成できないことがあります。この短所については、最終目標と同時に達成可能な身近な目標も立て、適宜目標を調整しながら取り組むことで、うまく最終目標を達成しようとしています。
+  utter_worked_hardest:
+  - text: 学部時代はギターを、大学院では研究に力を入れて取り組みました。
+  utter_motivation:
+  - text: 人と自然に会話できる機械が当たり前になる世界を実現したいからです。
+  utter_motivation_reason:
+  - text: 先程の目標の実現によって、社会にも私自身にも大きな価値がもたらされるからです。
+  utter_short_vision:
+  - text: ソフトウェアの設計や、対話のコア部分を作ったり、ビジネスソリューションの企画に取り組みたいです。
+  utter_vision_invalid:
+  - text: 5年後、10年後、20年後、くらいの未来で質問し直していただけないでしょうか。
+  utter_vision_in_5_years:
+  - text: エンジニアとして一人前に活動しており、ビジネスモデルの企画などにも携わっていたいです。
+  utter_vision_in_10_years:
+  - text: エンジニアとして技術を磨き続ける一方で、企画にもより力を入れて取り組んでいたいです。
+  utter_vision_in_20_years:
+  - text: 社会を広く見渡す視野を持ち、自らも開発を行いながら、新たな事業を立ち上げていたい。
+  utter_future:
+  - text: 将来はエンジニアとして自立し、面白く、社会に価値を提供する物を作っていたいです。
+  utter_place:
+  - text: 関西で働きたいです。
+  utter_question_benefit:
+  - text: 福利厚生について教えてください。
+  utter_question_vision:
+  - text: 弊社の将来のビジョンについて教えてください。
+  utter_thank:
+  - text: ありがとうございます。
+  utter_please_rephrase:
+  - text: 申し訳ありません。理解できませんでした。言い換えて質問していただけないでしょうか？
+  utter_ask_rephrase:
+  - text: 言い換えて質問していただけますか？
+  utter_default:
+  - text: 申し訳ありません。質問を理解できませんでした。言い換えて質問していただけますか？
+  utter_greet:
+  - text: こんにちは。調子はどうですか？
+  utter_happy:
+  - text: それは何よりです
+  utter_cheer_up:
+  - text: 元気出してください。こまねち！
+  utter_did_that_help:
+  - text: 元気出ましたか？
+  utter_goodbye:
+  - text: 残念です。それではまた。
+  utter_chitchat/ask_name:
+  - image: https://i.imgur.com/zTvA58i.jpeg
+    text: こんにちは。私はよりそいボットです。
+  - text: よりそいボットと呼ばれています！
+  utter_chitchat/ask_weather:
+  - text: 今は丁度ベルリンの晴れの日ようです。
+    image: http://i.imgur.com/vwv7aHN.png
+  - text: １週間の天気はわかりませんが、今日は晴れるみたいです。
+  utter_faq:
+  - text: そうなんですね。
+  - text: それはすごいです。
+actions:
+- action_vision
+- action_intro_hobby
+version: '2.0'

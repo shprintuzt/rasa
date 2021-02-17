@@ -1,23 +1,39 @@
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
 intents:
-
-- chitchat
+- greet
+- mood_great
+- chitchat:
+    is_retrieval_intent: true
+- mood_unhappy
+- affirm
+- deny
 - faq
-
 responses:
+  utter_greet:
+  - text: こんにちは。調子はどうですか？
+  utter_happy:
+  - text: それは何よりです
+  utter_cheer_up:
+  - text: 元気出してください。こまねち！
+  utter_did_that_help:
+  - text: 元気出ましたか？
+  utter_goodbye:
+  - text: 残念です。それではまた。
   utter_chitchat/ask_name:
-  - image: "https://i.imgur.com/zTvA58i.jpeg"
+  - image: https://i.imgur.com/zTvA58i.jpeg
     text: こんにちは。私はよりそいボットです。
   - text: よりそいボットと呼ばれています！
-
   utter_chitchat/ask_weather:
   - text: 今は丁度ベルリンの晴れの日ようです。
-    image: "http://i.imgur.com/vwv7aHN.png"
+    image: http://i.imgur.com/vwv7aHN.png
   - text: １週間の天気はわかりませんが、今日は晴れるみたいです。
-
   utter_faq:
   - text: そうなんですね。
   - text: それはすごいです。
+actions:
+- utter_chitchat
+- utter_greet
+- utter_happy
+version: '2.0'
