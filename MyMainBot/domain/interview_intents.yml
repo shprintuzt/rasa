@@ -1,7 +1,7 @@
 version: '2.0'
 intents:
-- introduction:
-    use_entities: []
+#- introduction:
+#    use_entities: []
 - ask_introduction
 - ask_study
 - ask_personality

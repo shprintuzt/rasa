@@ -1,3 +1,4 @@
+version: '2.0'
 responses:
 # introduction
   utter_introduction:
@@ -29,44 +30,35 @@ responses:
 
 # strength
   utter_strength:
-  - text: 好きなことを頑張れるところです。
-#  - text: 理想に向かって努力していけるところです。
+  - text: 理想に向かって努力していけるところです。
 
 # weakness
   utter_weakness:
-  - text: 好きなこと以外を頑張れないところです。
-#  - text: 見通しが甘いことです。そのせいで、準備がギリギリになったり、目標が達成できないことがあります。
+  - text: 見通しが甘いことです。そのせいで、準備がギリギリになったり、目標が達成できないことがあります。
 
 # what I worked hardest
   utter_worked_hardest:
-  - text: 全てがんばりました。
+  - text: 学部時代はギターを、大学院では研究に力を入れて取り組みました。
 
 # motivation
   utter_motivation:
-  - text: 貴社のことが好きだからです。
- #  - text: 人と自然に会話できる機械が当たり前になる世界を実現したいからです。
+  - text: 人と自然に会話できる機械が当たり前になる世界を実現したいからです。
   utter_motivation_reason:
-  - text: サービスが面白いからです。
- # - text: 先程の目標の実現によって、社会にも私自身にも大きな価値がもたらされるからです。
+  - text: 先程の目標の実現によって、社会にも私自身にも大きな価値がもたらされるからです。
 
 # vision
   utter_short_vision:
-  - text: ソフトウェア開発に取り組みたいです。
-#  - text: ソフトウェアの設計や、対話のコア部分を作ったり、ビジネスソリューションの企画に取り組みたいです。
+  - text: ソフトウェアの設計や、対話のコア部分を作ったり、ビジネスソリューションの企画に取り組みたいです。
   utter_vision_invalid:
   - text: 5年後、10年後、20年後、くらいの未来で質問し直していただけないでしょうか。
   utter_vision_in_5_years:
-  - text: 頑張っていたいです。
-#  - text: エンジニアとして一人前に活動しており、ビジネスモデルの企画などにも携わっていたいです。
+  - text: エンジニアとして一人前に活動しており、ビジネスモデルの企画などにも携わっていたいです。
   utter_vision_in_10_years:
-  - text: ばりばり頑張っていたいです。
-#  - text: エンジニアとして技術を磨き続ける一方で、企画にもより力を入れて取り組んでいたいです。
+  - text: エンジニアとして技術を磨き続ける一方で、企画にもより力を入れて取り組んでいたいです。
   utter_vision_in_20_years:
-  - text: 死ぬほど頑張っていたいです。
-#  - text: 社会を広く見渡す視野を持ち、自らも開発を行いながら、新たな事業を立ち上げていたい。
+  - text: 社会を広く見渡す視野を持ち、自らも開発を行いながら、新たな事業を立ち上げていたい。
   utter_future:
-  - text: 将来のことは秘密です。
-#  - text: 将来はエンジニアとして自立し、面白く、社会に価値を提供する物を作っていたいです。
+  - text: 将来はエンジニアとして自立し、面白く、社会に価値を提供する物を作っていたいです。
 
 # place
   utter_place:
@@ -77,6 +69,10 @@ responses:
   - text: 福利厚生について教えてください。
   utter_question_vision:
   - text: 弊社の将来のビジョンについて教えてください。
+  
+# thank
+  utter_thank:
+  - text: ありがとうございます。
 
 # fallback
   utter_please_rephrase:
@@ -85,4 +81,4 @@ responses:
   - text: 言い換えて質問していただけますか？
 #  # understand user intent but do not have answer.
   utter_default:
-  - text: 申し訳ありません。質問を理解できませんでした。
+  - text: 申し訳ありません。質問を理解できませんでした。言い換えて質問していただけますか？

@@ -29,39 +29,90 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-#- story: User interrupts the form and doesn't want to continue
-#  steps:
-#  - intent: request_restaurant
-#  - action: restaurant_form
-#  - active_loop: restaurant_form
-#  - intent: stop
-#  - action: utter_ask_continue
-#  - intent: deny
-#  - intent: utter_stop
-#  - action: action_deactivate_loop
-#  - active_loop: null
-#
-#- story: User interruputs the form but reconsidered to continue
-#  steps:
-#  - intent: request_restaurant
-#  - action: restaurant_form
-#  - active_loop: restaurant_form
-#  - intent: stop
-#  - action: utter_ask_continue
-#  - intent: affirm
-#  - action: utter_continue
-#  - action: restaurant_form
-#  - active_loop: restaurant_form
-#
-## a user can interrupt infinitely times because chitchat
-## is written in rules.
-## but a use can stop only finite times because stop is written in stories.
-#- story: User interruputs with chitchat
-#  steps:
-#  - intent: request_restaurant
-#  - action: restaurant_form
-#  - active_loop: restaurant_form
-#  - intent: chitchat
-#  - action: utter_chitchat
-#  - action: restaurant_form
-#  - active_loop: restaurant_form
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+# study
+- story: study detail
+  steps:
+  - intent: ask_study
+  - action: utter_study_abst
+  - intent: ask_detail
+  - action: utter_study_detail
+  
+- story: study motivation
+  steps:
+  - intent: ask_study
+  - action: utter_study_abst
+  - intent: ask_reason
+  - action: utter_study_motivation
+  
+- story: study application
+  steps:
+  - intent: ask_study
+  - action: utter_study_abst
+  - intent: ask_application
+  - action: utter_study_application
+  
+- story: labo motivation
+  steps:
+  - intent: ask_labo_motivation
+  - action: utter_labo_motivation
+  
+- story: univ motivation
+  steps:
+  - intent: ask_univ_motivation
+  - action: utter_univ_motivation
+
+# motivation
+- story: motivation
+  steps:
+  - intent: ask_motivation
+  - action: utter_motivation
+  - intent: ask_reason
+  - action: utter_motivation_reason
+
+#vision
+- story: answer vision in x years
+  steps:
+    - intent: ask_long_vision
+      entities:
+      - number: "7"
+    - action: action_vision
+
+- story: answer future vision
+  steps:
+    - intent: ask_long_vision
+    - action: utter_future
+
+# question from interviewee
+- story: question
+  steps:
+  - intent: ask_question
+  - action: utter_question_benefit
+
+- story: interactive_story_1
+  steps:
+  - intent: ask_study
+  - action: utter_study_abst
+  - intent: ask_application
+  - action: utter_study_application
+  - intent: ask_reason
+  - action: utter_study_motivation
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: interactive_story_2
+  steps:
+  - intent: ask_study
+  - action: utter_study_abst
+  - intent: ask_reason
+  - action: utter_study_motivation
